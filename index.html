@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Coffee House</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-casual.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <h1 class="site-heading text-center text-white d-none d-lg-block">
+    <span class="site-heading-upper text-primary mb-3">Navegue Na Luz</span>
+    <span class="site-heading-lower">Coffe House</span>
+  </h1>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="index.html">Inicio
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="clients.html">Clientes</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="statics.html">Estatisticas</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="about.html">Sobre</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-section about-heading">
+      <div class="container">
+        <div class="about-heading-content">
+          <div class="row">
+            <div class="col-xl-9 col-lg-10 mx-auto">
+              <div class="bg-faded p-5">
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-lower cta-inner text-center">Computadores P/ Documentação</span>
+                </h2>
+                <div class="row">
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <img class="card-img-top" src="./img/windowsbg.jpg" alt="Windows Desktop">
+                        <div class="card-body">
+                          <h5 class="card-title">CD01</h5>
+                          <p class="card-text" id="infocd1">Situação: Disponivel</p>
+                          <button type="button" class="btn btn-primary" data-toggle="modal" id="PC1" onclick="AtualizarBotao(1)" data-target="#OcuparCGModal">
+                            Ocupar
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <img class="card-img-top" src="./img/windowsbg.jpg" alt="Windows Desktop">
+                        <div class="card-body">
+                          <h5 class="card-title">CD02</h5>
+                          <p class="card-text" id="infocd2">Situação: Disponivel</p>
+                          <button type="button" class="btn btn-primary" data-toggle="modal" id="PC2" onclick="AtualizarBotao(2)" data-target="#OcuparCGModal">
+                            Ocupar
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row"><br></div>
+                  <div class="row">
+                      <div class="col-sm-6">
+                        <div class="card">
+                          <img class="card-img-top" src="./img/windowsbg.jpg" alt="Windows Desktop">
+                          <div class="card-body">
+                            <h5 class="card-title">CD03</h5>
+                            <p class="card-text" id="infocd3">Situação: Disponivel</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" id="PC3" onclick="AtualizarBotao(3)" data-target="#OcuparCGModal">
+                              Ocupar
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="card">
+                          <img class="card-img-top" src="./img/windowsbg.jpg" alt="Windows Desktop">
+                          <div class="card-body">
+                            <h5 class="card-title">CD04</h5>
+                            <p class="card-text" id="infocd4">Situação: Disponivel</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" id="PC4" onclick="AtualizarBotao(4)" data-target="#OcuparCGModal">
+                              Ocupar
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page-section about-heading">
+        <div class="container">
+          <div class="about-heading-content">
+            <div class="row">
+              <div class="col-xl-9 col-lg-10 mx-auto">
+                <div class="bg-faded p-5">
+                  <h2 class="section-heading mb-4">
+                    <span class="section-heading-lower cta-inner text-center">Computadores P/ Jogos</span>
+                  </h2>
+                  <div class="row">
+                      <div class="col-sm-6">
+                        <div class="card">
+                          <img class="card-img-top" src="./img/windowsbg.jpg" alt="Windows Desktop">
+                          <div class="card-body">
+                            <h5 class="card-title">CG02</h5>
+                            <p class="card-text" id="infocd5">Situação: Disponivel</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" id="PC5" onclick="AtualizarBotao(5)" data-target="#OcuparCGModal">
+                                Ocupar
+                              </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="card">
+                          <img class="card-img-top" src="./img/windowsbg.jpg" alt="Windows Desktop">
+                          <div class="card-body">
+                            <h5 class="card-title">CG01</h5>
+                            <p class="card-text" id="infocd6">Situação: Disponivel</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" id="PC6" onclick="AtualizarBotao(6)" data-target="#OcuparCGModal">
+                                Ocupar
+                              </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="modal fade" id="OcuparCGModal" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="TituloModalCentralizado">Ocupando Computador</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="row">
+                    <div class="form-group col-md-8">
+                        <label for="name">Nome</label>
+                        <select id="inputNome" class="form-control" onchange="AtualizarSaldo()">
+                            <option selected disabled value="-1">Escolher</option>
+                          </select>
+                        <small id="nameHelp" class="form-text text-muted">Selecione o Cliente</small>
+                      </div>
+                      <div class="form-group col-md-4">
+                          <label for="name">Saldo</label>
+                          <input type="text" disabled class="form-control" id="inputsaldo">
+                          <small id="nameHelp" class="form-text text-muted">Saldo disponivel</small>
+                        </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-8 float-left">
+                        <label for="name">Tempo</label>
+                        <select id="inputtempo" class="form-control" onchange="AtualizarTotal()">
+                            <option selected disabled value="-1">Escolher</option>
+                            <option value="0">30 Minutos</option>
+                            <option value="1">1 Hora</option>
+                            <option value="2">1 Hora e 30 Minutos</option>
+                            <option value="3">2 Horas</option>
+                          </select>
+                        <small id="nameHelp" class="form-text text-muted">Selecione o tempo do aluguel</small>
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="name">Total</label>
+                        <input type="text" disabled class="form-control" id="inputtotal">
+                        <small id="nameHelp" class="form-text text-muted">Valor total do aluguel</small>
+                      </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary" onclick="Ocupar()">Ocupar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  <footer class="footer text-faded text-center py-5">
+    <div class="container">
+      <p class="m-0 small">Gustavo Marques & Gabriel Cau</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/control.js"></script>
+  <script type="text/javascript">
+    window.onload = function(){
+      Control();
+    }
+    </script>
+  <script type="text/javascript">
+
+    botaoselecionado = 0;
+    function AtualizarBotao(botao) {
+      botaoselecionado = botao;     
+    }
+    var clientes = parseInt(localStorage.getItem("TotalClients"));
+    var select = document.getElementById("inputNome");
+    for(var i = 0; i <= clientes; i++) {
+      var cliente = {nome: localStorage.getItem("Name" + i), saldo: localStorage.getItem("Credit" + i)};
+      var option = document.createElement("option");
+      option.text = cliente.nome;
+      option.value = i;
+      select.add(option);
+    }
+
+    for(var i = 1; i <= 6; i++) {
+      if(localStorage.getItem("PCOcup" + i) == "1") {
+        var info = "infocd" + i;
+        var information = document.getElementById(info);
+        information.innerHTML = "Situação: Ocupado  Tempo: Retomando...";
+        var id = "PC" + i;
+        var botao = document.getElementById(id);
+        botao.disabled = true;
+        botao.innerHTML = "Ocupado"
+        botao.classList.remove("btn-primary");
+        botao.classList.add("btn-danger");
+        
+      }
+    }
+
+    function Ocupar() {
+      var select = document.getElementById("inputNome");
+      var cliente =  select.options[select.selectedIndex].value;
+      var saldo = parseFloat(localStorage.getItem("Credit" + cliente));
+      var nome = localStorage.getItem("Name" + cliente);
+      var preco = document.getElementById("inputtotal").value;
+      preco = preco.replace("R$", "");
+      preco = parseFloat(preco);
+      var pc = botaoselecionado;
+      var select1 = document.getElementById("inputtempo");
+      var select1value =  select1.options[select1.selectedIndex].value;
+      var time = 0;
+      switch(select1value) {
+        case "0":
+          time = 1800;
+          break;
+        case "1":
+          time = 3600;
+          break;
+        case "2":
+          time = 5400;
+          break;
+        case "3":
+          time = 7200;
+          break;
+      }
+      
+      if(cliente == "-1") alert("Escolha um cliente");
+      else if(saldo < preco) alert("O cliente não possui saldo suficiente");
+      else {
+        var novosaldo = saldo - preco;
+        novosaldo = novosaldo.toFixed(2);
+        localStorage.setItem("Credit" + cliente, novosaldo);
+        $('#OcuparCGModal').modal('hide');
+
+        alert("Computador ocupado com sucesso");
+        localStorage.setItem("PCOcup" + pc, 1);
+        localStorage.setItem("PCTime" + pc, time);
+
+        var id = "PC" + pc;
+        var botao = document.getElementById(id);
+        botao.disabled = true;
+        botao.innerHTML = "Ocupado"
+        botao.classList.remove("btn-primary");
+        botao.classList.add("btn-danger");
+        window.location.reload();
+      }
+
+    }
+
+    function AtualizarSaldo() {
+      var select = document.getElementById("inputNome");
+      var cliente =  select.options[select.selectedIndex].value;
+
+      if(cliente == "-1") alert("Escolha um cliente");
+      else
+        var saldo = parseFloat(localStorage.getItem("Credit" + cliente));
+        var text = document.getElementById("inputsaldo");
+        text.value =  "R$" + saldo;
+    }
+
+    function AtualizarTotal() {
+      var select = document.getElementById("inputtempo");
+      var tempo =  select.options[select.selectedIndex].value;
+      var valor = 0;
+      var multiplicador = 1;
+      if(botaoselecionado > 4) multiplicador = 1.5;
+      switch(tempo) {
+        case "0":
+          valor = 4;
+          break;
+        case "1":
+          valor = 8;
+          break;
+        case "2":
+          valor = 10;
+          break;
+        case "3":
+          valor = 12;
+          break;
+      }
+      var text = document.getElementById("inputtotal");
+      text.value =  "R$" + (valor * multiplicador);
+        
+    }  
+  </script>
+</body>
+
+</html>

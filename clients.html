@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Coffe House</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-casual.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <h1 class="site-heading text-center text-white d-none d-lg-block">
+    <span class="site-heading-upper text-primary mb-3">Navegue Na Luz</span>
+    <span class="site-heading-lower">Coffe House</span>
+  </h1>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item active px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="clients.html">Clientes
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="statics.html">Estatisticas</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="about.html">Sobre</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-section about-heading">
+      <div class="container">
+        <div class="about-heading-content">
+          <div class="row">
+            <div class="col-xl-9 col-lg-10 mx-auto">
+              <div class="bg-faded p-5">
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-lower cta-inner text-center">Clientes Cadastrados</span>
+                </h2>
+                <table class="table" id="clientstable">
+                    <thead>
+                      <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Saldo</th>
+                        <th scope="col">Pontuação</th>
+                      </tr>
+                    </thead>
+                  </table>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page-section about-heading">
+        <div class="container">
+          <div class="about-heading-content">
+            <div class="row">
+              <div class="col-xl-9 col-lg-10 mx-auto">
+                <div class="bg-faded p-5">
+                  <h2 class="section-heading mb-4">
+                    <span class="section-heading-lower cta-inner text-center">Cadastro de Cliente</span>
+                  </h2>
+                  <form>
+                      <div class="row">
+                        <div class="form-group col">
+                            <label for="name">Nome</label>
+                            <input type="text" class="form-control" id="nome">
+                            <small id="nameHelp" class="form-text text-muted">Digite o nome e sobrenome do cliente.</small>
+                          </div>
+                          <div class="form-group col">
+                              <label for="sobrenome">Sobrenome</label>
+                              <input type="text" class="form-control" id="sobrenome">
+                              <small id="nameHelp" class="form-text text-muted">sobrenome do cliente.</small>
+                            </div>
+                      </div>
+                      <div class="row">
+                          <div class="form-group col-md-8">
+                              <label for="sobrenome">Email</label>
+                              <input type="text" class="form-control" id="email">
+                              <small id="creditHelp" class="form-text text-muted">Adicione o email do cliente.</small>
+                            </div>
+                        <div class="form-group col-md-4">
+                          <label for="credit">Crédito</label>
+                          <input type="number" value="5.00" min="0.50" step="0.01" class="form-control" id="credito">
+                          <small id="creditHelp" class="form-text text-muted">Adicione o crédito inicial do cliente.</small>
+                        </div>
+                      </div>
+                        <button type="button" class="btn btn-primary float-right" onclick="Adicionar()">Adicionar Cliente</button>
+                  </form> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page-section about-heading">
+          <div class="container">
+            <div class="about-heading-content">
+              <div class="row">
+                <div class="col-xl-9 col-lg-10 mx-auto">
+                  <div class="bg-faded p-5">
+                    <h2 class="section-heading mb-4">
+                      <span class="section-heading-lower cta-inner text-center">Adicionar Saldo</span>
+                    </h2>
+                    <form>
+                        <div class="row">
+                          <div class="form-group col-md-9">
+                              <label for="name">Nome</label>
+                              <select id="inputNome" class="form-control">
+                                  <option selected disabled value="-1">Escolher</option>
+                                </select>
+                              <small id="nameHelp" class="form-text text-muted">Selecione o Cliente</small>
+                            </div>
+                          <div class="form-group col-md-3">
+                            <label for="credit">Crédito</label>
+                            <input type="number" value="5.00" min="0.50" step="0.01" class="form-control" id="addcredito">
+                            <small id="creditHelp" class="form-text text-muted">Adicione o crédito inicial do cliente.</small>
+                          </div>
+                        </div>
+                          <button type="button" class="btn btn-primary float-right" onclick="AdicionarSaldo()">Adicionar Saldo</button>
+                    </form> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer text-faded text-center py-5">
+          <div class="container">
+            <p class="m-0 small">Gustavo Marques & Gabriel Cau</p>
+          </div>
+        </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="js/AddDados.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/control.js"></script>
+  <script type="text/javascript">
+    window.onload = function(){
+      Control();
+    }
+    </script>
+  <script type="text/javascript">
+    var TotalClients = localStorage.getItem("TotalClients");
+    var Tabela = document.getElementById("clientstable");
+    for(var i = 0; i <= parseInt(TotalClients); i++) {
+      var newname = localStorage.getItem("Name" + i);
+      var newemail = localStorage.getItem("Email" + i);
+      var newcredit = localStorage.getItem("Credit" + i);
+      newcredit = parseFloat(newcredit);
+      newcredit = "R$" + newcredit.toFixed(2);
+      var newscore = localStorage.getItem("Score" + i);
+
+      var Linha = Tabela.insertRow(-1); 
+      var nome = Linha.insertCell(0); 
+      var email = Linha.insertCell(1);
+      var credit = Linha.insertCell(2);
+      var score = Linha.insertCell(3); 
+      
+      nome.innerHTML = newname; 
+      email.innerHTML = newemail;
+      credit.innerHTML = newcredit; 
+      score.innerHTML = newscore;
+
+      var select = document.getElementById("inputNome");
+      var option = document.createElement("option");
+      option.text = newname;
+      option.value = i;
+      select.add(option);
+    }
+
+    function AdicionarSaldo(){
+      var select = document.getElementById("inputNome");
+      var cliente =  select.options[select.selectedIndex].value;
+      if(cliente == "-1") alert("Escolha um cliente");
+      else
+        var saldo = parseFloat(localStorage.getItem("Credit" + cliente));
+        var pontuação = parseFloat(localStorage.getItem("Score" + cliente));
+        var newsaldo = parseFloat(document.getElementById("addcredito").value);
+        pontuação += newsaldo * 1000;
+        var saldo = saldo + newsaldo;
+
+        localStorage.removeItem("Credit" + cliente);
+        localStorage.setItem("Credit" + cliente, saldo);
+
+        localStorage.removeItem("Score" + cliente);
+        localStorage.setItem("Score" + cliente, pontuação);
+
+        alert("Saldo Adicionado");
+        window.location.reload();
+    }
+
+    function Adicionar(){
+      if($("#nome").val() == null) {
+        alert("Insira um nome para o cliente");
+      }
+      else if($("#sobrenome").val() == null) {
+        alert("Insira um sobrenome para o cliente");
+      }else if($("#email").val() == null) {
+        alert("Insira um email   para o cliente");
+      }else if($("#credito").val() == null) {
+        alert("Insira um credito inicial para o cliente");
+      }else{
+    
+        var TotalClients = localStorage.getItem("TotalClients");
+        if(TotalClients == null) TotalClients = 0;
+        else TotalClients = parseInt(TotalClients) + 1;
+        localStorage.removeItem("TotalClients");
+        localStorage.setItem("TotalClients", TotalClients);
+
+        var id = TotalClients;
+
+        var name = document.getElementById("nome").value;
+        var lastname = document.getElementById("sobrenome").value;
+        var name = name + " " + lastname;
+
+        localStorage.setItem("Name" + id, name);
+
+        var email = document.getElementById("email").value;
+
+        localStorage.setItem("Email" + id, email);
+        
+        var saldo = document.getElementById("credito").value;
+
+        localStorage.setItem("Credit" + id, saldo);
+
+        var score =parseFloat(saldo) * 1000;
+        localStorage.setItem("Score" + id, score);
+
+        alert("Cliente Cadastrado");
+        window.location.reload();
+        return true;
+        }
+
+      }
+      AddDados();
+    </script>
+  </body>
+</html>
